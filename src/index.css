@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(245, 158, 11, 0.18), transparent 28%),
+    radial-gradient(circle at 85% 15%, rgba(20, 184, 166, 0.18), transparent 24%),
+    linear-gradient(180deg, #020617 0%, #0f172a 40%, #020617 100%);
+  color: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.hero-glow {
+  pointer-events: none;
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  opacity: 0.55;
+}
+
+.hero-glow-one {
+  top: -2rem;
+  right: 10%;
+  height: 16rem;
+  width: 16rem;
+  background: rgba(245, 158, 11, 0.35);
+}
+
+.hero-glow-two {
+  bottom: 1rem;
+  left: 8%;
+  height: 14rem;
+  width: 14rem;
+  background: rgba(20, 184, 166, 0.25);
+}
+
+@media (max-width: 640px) {
+  .recharts-legend-wrapper {
+    font-size: 12px !important;
+  }
+}
